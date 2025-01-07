@@ -7,13 +7,17 @@
       }
     ],
     "routes": [
-        {
-            "src": "/(.*\\.(css|js))",
-            "dest": "/$1"
-          },
       {
-        "src": "/(.*)",
-        "dest": "/index.html"
+        "src": "/(.*\\.(css|js))",  
+        "dest": "/$1"               
+      },
+      {
+        "src": "/(.*)",             
+        "dest": "/index.html"       
       }
+    ],
+    "public": [
+      "style.css",
+      "script.js"
     ]
   }
