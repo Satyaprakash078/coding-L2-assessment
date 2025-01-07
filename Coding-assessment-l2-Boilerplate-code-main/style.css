@@ -1,0 +1,288 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container {
+  background-color: #f5f5f5;
+  padding: 1.5rem; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 2rem; 
+}
+
+.header-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem; 
+  text-align: left; 
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header nav {
+  display: flex;
+  gap: 1rem; 
+  justify-content:center; 
+  flex: 1; 
+  margin-left: -5rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: rgb(231, 223, 223);
+ 
+}
+header div:last-child {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+header div:last-child i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header div:last-child i:hover {
+  text-decoration: underline;
+  color: rgb(231, 223, 223);
+}
+
+/* Breadcrumb Styles */
+.cartheader {
+  font-size: 0.9rem;
+  color: #0e0d0d;
+  margin-bottom: 3rem;
+  margin-top: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartheader a {
+  color: #333;
+  text-decoration: none;
+  margin-right:0.5rem;
+ 
+}
+
+.cartheader a:hover {
+  text-decoration: underline;
+}
+
+.cartheader span {
+  color: #777;
+  margin-left:0.5rem;
+  
+}
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Cart Container */
+.cart-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap:wrap;
+}
+
+.cart-left {
+  flex: 2;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-right {
+  flex: 1;
+  background-color: #e3d6d6;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Item Styles */
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  align-items:center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex: 2;
+  display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.cart-item-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-details p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-quantity input {
+  width: 60px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.cart-item-subtotal {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+ }
+ .remove-item {
+  font-size: 24px;
+  color: #fa4d4d;
+  cursor: pointer;
+}
+
+/* Cart Totals Styles */
+.cart-totals {
+  margin-top: 1rem;
+ 
+}
+
+
+.cart-totals p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin: 1rem;
+}
+
+.cart-totals p strong {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+/* .cart-totals span{
+  margin:2rem;
+} */
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.checkout-btn:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+footer.features {
+  display: flex;
+  justify-content: space-around;
+  background-color: #dcd6dc;
+  color: #171212;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer.features div {
+  text-align: center;
+}
+
+footer.features i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #131111;
+}
+
+footer.features p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-container {
+      flex-direction: column;
+  }
+
+  .cart-left, .cart-right {
+      flex: 1;
+  }
+
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  header nav {
+      margin-top: 1rem;
+  }
+
+  footer.features {
+      flex-direction: column;
+      gap: 1rem;
+  }
+}
